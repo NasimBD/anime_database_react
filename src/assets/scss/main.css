@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Patrick Hand', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+  padding: 4rem 0;
+}
+
+header h1 {
+  text-align: center;
+  color: #a19f9f;
+}
+
+header h1 strong {
+  color: #2c2c2c;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+#main aside {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+#main aside h2 {
+  margin: 1rem auto;
+  text-align: center;
+  color: #288080;
+  font-size: 1rem;
+}
+
+#main aside li {
+  margin-bottom: 0.5rem;
+}
+
+#main aside a {
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: #eeeded;
+  color: #494949;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+}
+
+#main aside a:hover {
+  background-color: #e7e6e6;
+}
+
+#main #content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#main #loadingImg {
+  width: 12rem;
+}
+
+#main #anime-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#main #anime-list .anime-wrapper {
+  padding: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+}
+
+#main #anime-list .anime-card {
+  display: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#main #anime-list .anime-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#main #anime-list .anime-card h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #413f3f;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+#main #anime-list .anime-card img {
+  width: 100%;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 280px) {
+  #main #anime-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  #main #anime-list .anime-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 576px) {
+  #main #anime-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #main #anime-list .anime-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5rem 0.3rem;
+  }
+  #main ul {
+    max-width: 250px;
+  }
+  #main #content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding: 1rem 0;
+  }
+  #main aside {
+    margin-top: 2rem;
+  }
+}
+
+form {
+  margin-left: auto;
+  padding: 0.3rem;
+}
+
+@media screen and (max-width: 576px) {
+  form {
+    width: 210px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  form {
+    width: 350px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+form .form-group {
+  position: relative;
+  border: solid 1px gray;
+  border-radius: 1.5rem;
+}
+
+form .form-group:hover .fa-search {
+  color: #04f8f8;
+}
+
+form .form-group input {
+  color: #5c5b5b;
+  border: none;
+  outline: none;
+  padding: 0.7rem 2.5rem 0.7rem 0.7rem;
+  width: 100%;
+  background-color: transparent;
+}
+
+form .form-group .fa-search {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #55c4c4;
+  font-size: 1.1rem;
+  padding-left: 0.3rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* ----------------------------- media */
+/* ----------------------------- 1 */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* ----------------------------- 2 */
+@media screen and (min-width: 576px) and (max-width: 769px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* ----------------------------- 3 */
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
