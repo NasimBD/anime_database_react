@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/anime_database_react/static/css/main.93c29078.css",
+    "main.js": "/anime_database_react/static/js/main.920f2180.js",
+    "static/media/loading-1.gif": "/anime_database_react/static/media/loading-1.a74b50f68f349351c566.gif",
+    "index.html": "/anime_database_react/index.html",
+    "main.93c29078.css.map": "/anime_database_react/static/css/main.93c29078.css.map",
+    "main.920f2180.js.map": "/anime_database_react/static/js/main.920f2180.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93c29078.css",
+    "static/js/main.920f2180.js"
+  ]
+}
